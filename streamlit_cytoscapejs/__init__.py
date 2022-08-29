@@ -34,7 +34,7 @@ def st_cytoscapejs(elements, stylesheet, width=400, height=400, key=None):
         be re-mounted in the Streamlit frontend and lose its current state.
 
     """
-    _component_func(
+    return _component_func(
         elements=elements,
         stylesheet=stylesheet,
         width=width,
@@ -42,4 +42,4 @@ def st_cytoscapejs(elements, stylesheet, width=400, height=400, key=None):
         key=key,
         default=None,
     )
-    return
+

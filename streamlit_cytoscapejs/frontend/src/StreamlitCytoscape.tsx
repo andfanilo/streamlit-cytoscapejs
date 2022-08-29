@@ -13,6 +13,12 @@ const StreamlitCytoscape = ({ args }: ComponentProps) => {
       elements={args.elements}
       stylesheet={args.stylesheet}
       style={{ width: args.width, height: args.height }}
+      cy={(cy) => {
+        cy.on('tap', 'node', function (evt) {
+          var node = evt.target;
+          Streamlit.setComponentValue({ 'selected_node_id': node.id() });
+        });
+      }}
     />
   )
 }
