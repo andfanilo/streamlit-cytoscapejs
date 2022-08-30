@@ -15,9 +15,8 @@ def readme() -> str:
 
 setuptools.setup(
     name="streamlit-cytoscapejs",
-    version="0.0.2",
+    version="0.0.3",
     author="Fanilo ANDRIANASOLO",
-    author_email="andfanilo@gmail.com",
     description="A Streamlit custom component for Cytoscape.js",
     long_description=readme(),
     long_description_content_type="text/markdown",

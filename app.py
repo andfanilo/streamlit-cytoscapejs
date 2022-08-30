@@ -12,4 +12,7 @@ stylesheet = [
 ]
 
 st.title("Hello Cytoscape.js")
-st_cytoscapejs(elements, stylesheet)
+clicked_elements = st_cytoscapejs(elements, stylesheet)
+
+if clicked_elements is not None:
+    st.write(clicked_elements)
